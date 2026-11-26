@@ -1,74 +1,56 @@
-# 📘 Procesamiento de Datos en Flujo (Streaming)
+<div align="center">
 
-Este repositorio contiene materiales, ejercicios y ejemplos prácticos relacionados con el **procesamiento de datos en flujo** dentro del contexto del Big Data. El objetivo es disponer de un espacio inicial que irá ampliándose progresivamente a medida que avance el desarrollo del módulo y las actividades asociadas.
+![Ingeniería De Datos](https://img.shields.io/badge/INGENIER%C3%8DA_DE_DATOS-EF6C00?style=for-the-badge)
 
-## 🧩 Planteamiento del Módulo
+# Procesamiento de datos en streaming
 
-El módulo aborda el procesamiento de datos en flujo siguiendo una progresión conceptual y práctica similar al procesamiento batch estudiado previamente. Para ello:
+Captura y análisis de datos en tiempo real con Apache Kafka, Spark Streaming y Structured Streaming, con la teoría de las arquitecturas Lambda y Kappa.
 
-### Introducción a los datos en flujo
+![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white) ![Apache Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
-- Concepto de datos en flujo (streaming): origen y tipologías.
-- Diferencias clave con los sistemas de procesamiento en tiempo real.
-- Revisión de sistemas de captura de datos en flujo y su utilidad en entornos Big Data.
-- Análisis de dos sistemas Big Data que trabajan con datos en streaming, con especial atención a sus mecanismos de captura.
+<img src="Visualizaciones/Toots%20acumulado%20por%20idioma%20por%20ventanas%20de%2060%20segs.png" alt="Gráfico de publicaciones acumuladas por idioma en ventanas de 60 segundos, calculado con Spark Streaming" width="100%" />
 
-### Arquitecturas Big Data para datos en flujo
+<sub>Publicaciones acumuladas por idioma en ventanas de 60 segundos.</sub>
 
-- Contexto histórico que motiva el desarrollo de arquitecturas Big Data.
-- Características que debe cumplir un sistema Big Data para el análisis de datos en streaming: robustez, extensibilidad, eficiencia.
-- Estudio de las arquitecturas Lambda y Kappa.
-- Revisión de las publicaciones originales que introducen estos modelos.
-- Ejemplo práctico de arquitectura Big Data basada en tecnologías como:
+</div>
 
-  - **Apache Spark**
-  - **Apache Mesos**
-  - **Akka**
-  - **Apache Cassandra**
-  - **Apache Kafka**
+---
 
-### Procesamiento técnico y algoritmos
+## Descripción general
 
-- Propiedades de los datos en streaming que influyen en el diseño algorítmico.
-- Métodos exactos y heurísticos para el análisis de datos en flujo.
-- Técnicas matemáticas y aproximadas para tratar grandes volúmenes en tiempo limitado.
+Proyecto práctico de procesamiento en flujo: se crean temas de Kafka, se producen y consumen mensajes y se procesan datos en tiempo real con Spark Streaming y Structured Streaming, agregando por ventanas de tiempo. Incluye la teoría de captura de datos en flujo, las arquitecturas Lambda y Kappa y los algoritmos para datos en streaming.
 
-## Objetivos y Competencias del Módulo
+## Contenido
 
-Al finalizar el módulo, el alumnado será capaz de:
+| Parte | Contenido |
+| --- | --- |
+| Kafka | Creación, listado, descripción y borrado de temas; productores y consumidores; ingesta y lectura de temas |
+| Spark Streaming | Procesamiento por micro-lotes y agregaciones por ventanas |
+| Structured Streaming | Consultas continuas sobre flujos |
+| [Visualizaciones](Visualizaciones) | Resultados de los ejercicios: mensajes por consola, lotes y agregados por idioma |
+| [Teoría](Teoria) | Kafka y Flume, patrones de captura de datos, algoritmos para streaming, Spark Streaming y Storm |
 
-- Comprender qué son los datos en flujo (streaming).
-- Distinguir entre sistemas de procesamiento en streaming y en tiempo real.
-- Conocer las tipologías de datos en flujo.
-- Identificar y aplicar métodos de captura de datos en flujo en entornos Big Data.
-- Comprender la evolución histórica hacia las arquitecturas Big Data.
-- Reconocer las características clave de sistemas Big Data para streaming.
-- Conocer las arquitecturas Lambda y Kappa y sus implicaciones.
-- Entender cómo implementar arquitecturas Big Data para el procesamiento de datos en flujo.
+## Tecnologías y herramientas
 
-## 🎓 Objetivos de la Actividad
+| Ámbito | Herramientas |
+| --- | --- |
+| Mensajería | Apache Kafka, Apache Flume |
+| Procesamiento | Spark Streaming, Structured Streaming |
+| Entorno | Jupyter sobre un clúster remoto |
 
-Esta actividad práctica permite al estudiante:
+## Instalación y uso
 
-- Conocer los métodos básicos de captura de flujos de datos en entornos Big Data.
-- Entender y practicar con herramientas fundamentales como:
+El cuaderno está en `PEC/` y se ejecutó en un servidor con Kafka y Spark. Para revisarlo basta con Jupyter; para ejecutarlo hace falta un entorno con Kafka y PySpark.
 
-  - **Apache Flume**
-    - [Manual de referencia Apache Flume](https://flume.apache.org/documentation.html)
-    - [Referencia del conector usado por Apache Flume](https://github.com/cloudera/cdh-twitter-example)
-  - **Apache Streaming:**
-    - [Manual de referencia Apache Streaming](https://spark.apache.org/docs/latest/streaming-programming-guide.html)
+## Aspectos técnicos destacados
 
-- Adquirir suficiencia en su uso dentro de pipelines de datos en streaming.
+- Del productor al resultado: ingesta en Kafka, procesamiento en Spark y agregados por ventanas de tiempo.
+- Comparación entre Spark Streaming y Structured Streaming.
 
-## 📁 Estructura del Repositorio
+## Autor
 
-> _(Este apartado se ampliará conforme el repositorio crezca)_
+**Julio Úbeda Quesada** · Data Scientist
 
-- `/Teoria` – Material teórico de referencia.
-- `/ejercicios` – Actividades guiadas sobre captura y procesamiento de datos en flujo.
-- `/ejemplos` – Scripts y configuraciones de ejemplo para Flume, Kafka y arquitecturas Big Data.
+[![Portfolio](https://img.shields.io/badge/Portfolio-0B2545?style=flat-square&logo=astro&logoColor=white)](https://juliouq.github.io/Portfolio-Web---JulioUQ/es/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square)](https://www.linkedin.com/in/juliouq/) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/JulioUQ)
 
-## 🚧 Estado Actual
-
-Este README ofrece una descripción inicial del módulo y su propósito. Será actualizado a medida que avancen las actividades, se añadan entregables o se integren nuevas tecnologías.
+<sub>Material elaborado durante el Máster Universitario en Ciencia de Datos.</sub>
