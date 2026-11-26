@@ -1,19 +1,32 @@
-# 📘 Procesamiento de Datos en Flujo (Streaming)
+# Prácticas · Procesamiento de datos en streaming
+
+Material académico y un notebook sobre captura y procesamiento de datos en flujo con herramientas del ecosistema Apache.
+
+## Tecnologías
+
+Apache Spark, Kafka, Flume y Jupyter
+
+## Explorar el repositorio
+
+- [`PEC/Actividad_Streaming_ES_UbedaQuesadaJulio.ipynb`](./PEC/Actividad_Streaming_ES_UbedaQuesadaJulio.ipynb)
+- [`Teoria`](./Teoria)
+
+## Documentación
 
 Este repositorio contiene materiales, ejercicios y ejemplos prácticos relacionados con el **procesamiento de datos en flujo** dentro del contexto del Big Data. El objetivo es disponer de un espacio inicial que irá ampliándose progresivamente a medida que avance el desarrollo del módulo y las actividades asociadas.
 
-## 🧩 Planteamiento del Módulo
+#### 🧩 Planteamiento del Módulo
 
 El módulo aborda el procesamiento de datos en flujo siguiendo una progresión conceptual y práctica similar al procesamiento batch estudiado previamente. Para ello:
 
-### Introducción a los datos en flujo
+##### Introducción a los datos en flujo
 
 - Concepto de datos en flujo (streaming): origen y tipologías.
 - Diferencias clave con los sistemas de procesamiento en tiempo real.
 - Revisión de sistemas de captura de datos en flujo y su utilidad en entornos Big Data.
 - Análisis de dos sistemas Big Data que trabajan con datos en streaming, con especial atención a sus mecanismos de captura.
 
-### Arquitecturas Big Data para datos en flujo
+##### Arquitecturas Big Data para datos en flujo
 
 - Contexto histórico que motiva el desarrollo de arquitecturas Big Data.
 - Características que debe cumplir un sistema Big Data para el análisis de datos en streaming: robustez, extensibilidad, eficiencia.
@@ -27,13 +40,13 @@ El módulo aborda el procesamiento de datos en flujo siguiendo una progresión c
   - **Apache Cassandra**
   - **Apache Kafka**
 
-### Procesamiento técnico y algoritmos
+##### Procesamiento técnico y algoritmos
 
 - Propiedades de los datos en streaming que influyen en el diseño algorítmico.
 - Métodos exactos y heurísticos para el análisis de datos en flujo.
 - Técnicas matemáticas y aproximadas para tratar grandes volúmenes en tiempo limitado.
 
-## Objetivos y Competencias del Módulo
+#### Objetivos y Competencias del Módulo
 
 Al finalizar el módulo, el alumnado será capaz de:
 
@@ -46,7 +59,7 @@ Al finalizar el módulo, el alumnado será capaz de:
 - Conocer las arquitecturas Lambda y Kappa y sus implicaciones.
 - Entender cómo implementar arquitecturas Big Data para el procesamiento de datos en flujo.
 
-## 🎓 Objetivos de la Actividad
+#### 🎓 Objetivos de la Actividad
 
 Esta actividad práctica permite al estudiante:
 
@@ -61,7 +74,7 @@ Esta actividad práctica permite al estudiante:
 
 - Adquirir suficiencia en su uso dentro de pipelines de datos en streaming.
 
-## 📁 Estructura del Repositorio
+#### 📁 Estructura del Repositorio
 
 > _(Este apartado se ampliará conforme el repositorio crezca)_
 
@@ -69,6 +82,6 @@ Esta actividad práctica permite al estudiante:
 - `/ejercicios` – Actividades guiadas sobre captura y procesamiento de datos en flujo.
 - `/ejemplos` – Scripts y configuraciones de ejemplo para Flume, Kafka y arquitecturas Big Data.
 
-## 🚧 Estado Actual
+#### 🚧 Estado Actual
 
 Este README ofrece una descripción inicial del módulo y su propósito. Será actualizado a medida que avancen las actividades, se añadan entregables o se integren nuevas tecnologías.
